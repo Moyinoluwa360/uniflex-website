@@ -647,6 +647,93 @@
   margin: 0 auto;
 }
 
+/* ── Contact ──────────────────────────────────────────────────── */
+.contact-section {
+  padding: 0 0 120px;
+}
+
+.contact-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+  padding: 64px;
+  border-radius: var(--radius-sheet);
+  background: var(--dark-card);
+  border: 1px solid var(--dark-hairline);
+}
+
+.contact-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(32px, 4vw, 48px);
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  color: var(--dark-ink-primary);
+  margin-bottom: 16px;
+}
+
+.contact-subtitle {
+  max-width: 460px;
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--dark-ink-secondary);
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-detail {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px;
+  border: 1px solid var(--dark-hairline);
+  border-radius: var(--radius-control);
+  color: var(--dark-ink-primary);
+  transition: border-color 0.2s, background 0.2s;
+}
+
+a.contact-detail:hover {
+  border-color: rgba(16, 185, 129, 0.4);
+  background: rgba(16, 185, 129, 0.05);
+}
+
+.contact-detail-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--emerald);
+  font-size: 20px;
+}
+
+.contact-detail-label,
+.contact-detail-value {
+  display: block;
+}
+
+.contact-detail-label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--dark-ink-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.contact-detail-value {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
 /* ── CTA Section ──────────────────────────────────────────────── */
 .cta-section {
   padding: 120px 0;
@@ -752,6 +839,13 @@
   gap: 16px;
 }
 
+.footer-brand,
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
 .footer-logo {
   font-family: var(--font-display);
   font-weight: 600;
@@ -763,6 +857,30 @@
 .footer-text {
   font-size: 14px;
   color: var(--dark-ink-secondary);
+}
+
+.footer-contact {
+  max-width: 360px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--dark-ink-secondary);
+}
+
+.footer-contact a {
+  color: var(--emerald);
+  transition: color 0.2s;
+}
+
+.footer-contact a:hover {
+  color: var(--pure-white);
+}
+
+.footer-contact-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--dark-ink-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
 .footer-links {
@@ -852,6 +970,12 @@
   .cta-card {
     padding: 48px 24px;
   }
+
+  .contact-card {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    padding: 40px 24px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -906,5 +1030,14 @@
   .footer .container {
     flex-direction: column;
     text-align: center;
+  }
+
+  .footer-brand,
+  .footer-contact {
+    align-items: center;
+  }
+
+  .footer-contact {
+    max-width: 300px;
   }
 }

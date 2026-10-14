@@ -20,6 +20,7 @@ function App() {
           <ul className={`navbar-links ${menuOpen ? 'open' : ''}`}>
             <li><a href="#features" onClick={() => setMenuOpen(false)}>Features</a></li>
             <li><a href="#how-it-works" onClick={() => setMenuOpen(false)}>How It Works</a></li>
+            <li><a href="#contact" onClick={() => setMenuOpen(false)}>Contact Us</a></li>
             <li><a href="#download" className="navbar-cta" onClick={() => setMenuOpen(false)}>Coming Soon</a></li>
           </ul>
           <button
@@ -197,6 +198,42 @@ function App() {
         </div>
       </section>
 
+      {/* ── Contact ────────────────────────────────────────── */}
+      <section className="contact-section" id="contact">
+        <div className="container">
+          <div className="contact-card">
+            <div className="contact-intro">
+              <div className="section-label">
+                <span className="section-label-line" />
+                Contact Us
+              </div>
+              <h2 className="contact-title">We&rsquo;re here to help.</h2>
+              <p className="contact-subtitle">
+                Have a question about Uniflex or want to learn more about our campus delivery service?
+                Reach out to our team.
+              </p>
+            </div>
+
+            <div className="contact-details">
+              <a className="contact-detail" href="tel:+2349160556368">
+                <span className="contact-detail-icon">&#x260E;</span>
+                <span>
+                  <span className="contact-detail-label">Call us</span>
+                  <span className="contact-detail-value">+234 916 055 6368</span>
+                </span>
+              </a>
+              <div className="contact-detail">
+                <span className="contact-detail-icon">&#x2316;</span>
+                <span>
+                  <span className="contact-detail-label">Visit us</span>
+                  <span className="contact-detail-value">P.M.B 230, EDE OFF GBONGAN – OSOGBO RD., OSOGBO, OSUN STATE, NIGERIA</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── CTA / Download ──────────────────────────────────── */}
       <section className="cta-section" id="download">
         <div className="container">
@@ -228,12 +265,19 @@ function App() {
       {/* ── Footer ──────────────────────────────────────────── */}
       <footer className="footer">
         <div className="container">
-          <span className="footer-logo">Uniflex</span>
-          <span className="footer-text">&copy; {new Date().getFullYear()} Uniflex. All rights reserved.</span>
+          <div className="footer-brand">
+            <span className="footer-logo">Uniflex</span>
+            <span className="footer-text">&copy; {new Date().getFullYear()} Uniflex. All rights reserved.</span>
+          </div>
+          <div className="footer-contact">
+            <span className="footer-contact-label">Contact</span>
+            <a href="tel:+2349160556368">+234 916 055 6368</a>
+            <span>P.M.B 230, EDE OFF GBONGAN – OSOGBO RD., OSOGBO, OSUN STATE, NIGERIA</span>
+          </div>
           <ul className="footer-links">
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Terms</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#contact">Contact Us</a></li>
           </ul>
         </div>
       </footer>
