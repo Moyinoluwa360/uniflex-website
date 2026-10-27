@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import './App.css'
 
 function App() {
@@ -278,6 +279,9 @@ function App() {
             <li><a href="#features">Features</a></li>
             <li><a href="#how-it-works">How It Works</a></li>
             <li><a href="#contact">Contact Us</a></li>
+            <li><Link to="/privacy">Privacy Policy</Link></li>
+            <li><Link to="/terms">Terms</Link></li>
+            <li><Link to="/delete-account">Delete Account</Link></li>
           </ul>
         </div>
       </footer>
