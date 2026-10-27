@@ -12,6 +12,7 @@ function App() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
+  
   return (
     <>
       {/* ── Navbar ──────────────────────────────────────────── */}
