@@ -14,7 +14,7 @@ export default function PrivacyPolicy() {
         <div className="container">
           <div className="legal-header">
             <h1 className="legal-title">Privacy Policy</h1>
-            <p className="legal-updated">Last updated: October 19, 2026</p>
+            <p className="legal-updated">Last updated: November 12, 2026</p>
           </div>
 
           <div className="legal-content">
@@ -29,17 +29,18 @@ export default function PrivacyPolicy() {
             <h3>Personal Information</h3>
             <p>When you create an account or use our services, we may collect:</p>
             <ul>
-              <li><strong>Account information:</strong> Full name, email address, phone number, and password.</li>
-              <li><strong>Profile information:</strong> Campus name, profile picture, and delivery address.</li>
-              <li><strong>Payment information:</strong> Wallet balance and transaction history. Payment processing is handled by Paystack; we do not store your bank card details.</li>
-              <li><strong>Identity verification:</strong> Phone number verified via SMS (Termii).</li>
+              <li><strong>Account information:</strong> Full name, nickname, email address, phone number, and password (stored only as a secure hash by our login provider).</li>
+              <li><strong>Student information:</strong> Matric number, school, and date of birth (to confirm you are a student and old enough to use Uniflex).</li>
+              <li><strong>Orders and payments:</strong> Your orders, errands and food gifts (items, delivery location and details, notes and gift messages), wallet balance and transaction history. Card payments are processed by Paystack; we never see or store your card details.</li>
+              <li><strong>Identity verification:</strong> Phone number verified with a one-time SMS code (Termii). Your 4-digit transaction PIN is stored only as a secure hash.</li>
+              <li><strong>Support:</strong> Messages you send to Uniflex support in the App.</li>
             </ul>
 
             <h3>Automatically Collected Information</h3>
             <ul>
-              <li><strong>Location data:</strong> With your permission, we collect real-time location data to provide delivery tracking and connect you with nearby vendors. You can disable location access in your device settings at any time.</li>
+              <li><strong>No location tracking:</strong> The App does not access your device location. You type your delivery location yourself.</li>
               <li><strong>Device information:</strong> Device type, operating system, and push notification tokens for delivering notifications via Firebase Cloud Messaging (FCM).</li>
-              <li><strong>Usage data:</strong> Pages viewed, features used, and interactions within the App to improve our services.</li>
+              <li><strong>No advertising or analytics tracking:</strong> We do not use advertising identifiers or track you across other apps or websites.</li>
             </ul>
 
             <h2>2. How We Use Your Information</h2>
@@ -60,8 +61,8 @@ export default function PrivacyPolicy() {
             <h2>3. Information Sharing</h2>
             <p>We may share your information with:</p>
             <ul>
-              <li><strong>Vendors:</strong> Your name, order details, and delivery address so they can fulfill your order.</li>
-              <li><strong>Riders:</strong> Your name, phone number, and delivery location so they can complete deliveries.</li>
+              <li><strong>Uniflex staff:</strong> Our kitchen and admin team see your name, order details and delivery location to prepare and manage your order.</li>
+              <li><strong>Riders:</strong> After a rider accepts your delivery or errand, they see your name, phone number and delivery location so they can complete it. For a food gift, the rider sees the recipient's and the sender's name and phone number.</li>
               <li><strong>Payment processors:</strong> Paystack processes wallet funding and transactions. Their use of your data is governed by their own privacy policy.</li>
               <li><strong>Service providers:</strong> Supabase (database and authentication), Firebase (push notifications), and Termii (SMS verification) help us operate the App.</li>
               <li><strong>Legal requirements:</strong> We may disclose information if required by law, regulation, or legal process.</li>
@@ -86,13 +87,12 @@ export default function PrivacyPolicy() {
               <li><strong>Update</strong> your account information through the App's profile settings.</li>
               <li><strong>Delete</strong> your account and associated data. See our <Link to="/delete-account">Account Deletion</Link> page for instructions.</li>
               <li><strong>Opt out</strong> of push notifications through your device settings.</li>
-              <li><strong>Withdraw consent</strong> for location tracking through your device settings.</li>
             </ul>
 
             <h2>6. Children's Privacy</h2>
             <p>
-              Our App is not intended for children under the age of 13. We do not knowingly
-              collect personal information from children under 13. If we learn that we have
+              Our App is for university students and is not intended for anyone under the age of 14. We do not knowingly
+              collect personal information from anyone under 14. If we learn that we have
               collected data from a child under 13, we will delete it promptly.
             </p>
 
@@ -101,9 +101,9 @@ export default function PrivacyPolicy() {
             <ul>
               <li><strong>Supabase</strong> &mdash; Authentication and data storage</li>
               <li><strong>Paystack</strong> &mdash; Payment processing</li>
-              <li><strong>Firebase (Google)</strong> &mdash; Push notifications and analytics</li>
+              <li><strong>Firebase (Google)</strong> &mdash; Push notifications only</li>
               <li><strong>Termii</strong> &mdash; SMS verification</li>
-              <li><strong>Google Maps</strong> &mdash; Location and mapping services</li>
+              <li><strong>Google Maps</strong> &mdash; Riders may open a delivery address in Google Maps; Uniflex does not share your location with Google</li>
             </ul>
 
             <h2>8. Changes to This Policy</h2>

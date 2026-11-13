@@ -14,7 +14,7 @@ export default function DeleteAccount() {
         <div className="container">
           <div className="legal-header">
             <h1 className="legal-title">Delete Your Account</h1>
-            <p className="legal-updated">Last updated: October 19, 2026</p>
+            <p className="legal-updated">Last updated: November 12, 2026</p>
           </div>
 
           <div className="legal-content">
@@ -29,9 +29,9 @@ export default function DeleteAccount() {
             <ol>
               <li>Open the Uniflex app and log in to your account.</li>
               <li>Go to <strong>Profile</strong> (bottom navigation bar).</li>
-              <li>Tap <strong>Settings</strong>.</li>
-              <li>Tap <strong>Delete Account</strong>.</li>
-              <li>Confirm the deletion when prompted.</li>
+              <li>Scroll to <strong>Privacy</strong> and tap <strong>Delete account</strong>.</li>
+              <li>Read what will be deleted, tap <strong>Delete my account</strong>, then <strong>Delete</strong>.</li>
+              <li>Enter your 4-digit transaction PIN. Your account is deleted at once and you are signed out.</li>
             </ol>
 
             <h3>Option 2: Contact Support</h3>
@@ -48,10 +48,11 @@ export default function DeleteAccount() {
             <p>When your account is deleted, the following data is permanently removed:</p>
             <ul>
               <li>Your profile information (name, email, phone number, profile picture).</li>
-              <li>Your wallet balance and transaction history.</li>
-              <li>Your order history and saved addresses.</li>
-              <li>Your referral codes and rewards.</li>
-              <li>Push notification subscriptions.</li>
+              <li>Your date of birth, matric number and school.</li>
+              <li>Your transaction PIN, support chats and notifications.</li>
+              <li>Delivery addresses, notes and gift messages on your orders.</li>
+              <li>Your referral rewards and push notification subscriptions.</li>
+              <li>Your login: you can no longer sign in, and your email and phone number can be used to create a new account.</li>
             </ul>
 
             <h2>Data We May Retain</h2>
@@ -60,7 +61,7 @@ export default function DeleteAccount() {
               records for a limited period after account deletion:
             </p>
             <ul>
-              <li><strong>Transaction records:</strong> Payment and refund records may be retained for up to 6 years for financial and tax compliance.</li>
+              <li><strong>Transaction records:</strong> Order and wallet payment records are kept for up to 6 years for financial and tax compliance, with your name, email, phone number and addresses removed.</li>
               <li><strong>Legal obligations:</strong> Data required to comply with legal proceedings, regulations, or government requests.</li>
             </ul>
             <p>
